@@ -110,6 +110,21 @@ input::placeholder {
   color: #9b9b9b;
 }
 
+@supports(font-synthesis: inherit) {
+  input::-webkit-input-placeholder {
+    line-height: 3rem;
+ }
+  input:-ms-input-placeholder {
+    line-height: 3rem;
+ }
+  input::-ms-input-placeholder {
+    line-height: 3rem;
+ }
+  input::placeholder {
+    line-height: 3rem;
+ }
+}
+
 .dollar-sign {
   color: #9b9b9b;
   font-size: 2rem;
